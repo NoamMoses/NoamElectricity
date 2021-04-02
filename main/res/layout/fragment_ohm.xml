@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+fragment_ohm.xml
+This file is for the OhmFragment.java
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ohm_law_title"
+        android:textSize="30sp"
+        android:id="@+id/ohm_title"/>
+    <LinearLayout
+        android:id="@+id/ohm_layout_v"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/ohm_title"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:weightSum="2"
+        android:background="@drawable/border_bottom_black">
+        <TextView
+            android:id="@+id/ohm_title_v"
+            android:text="@string/voltage_f"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false" />
+        <EditText
+            android:id="@+id/ohm_input_v"
+            android:inputType="numberDecimal"
+            android:hint="@string/voltage"
+            android:autofillHints="123456"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:ems="10" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ohm_layout_i"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/ohm_layout_v"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:weightSum="2"
+        android:background="@drawable/border_bottom_black">
+        <TextView
+            android:id="@+id/ohm_title_i"
+            android:text="@string/current_f"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false" />
+        <EditText
+            android:id="@+id/ohm_input_i"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no"
+            android:hint="@string/current"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:ems="10" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ohm_layout_r"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/ohm_layout_i"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:weightSum="2"
+        android:background="@drawable/border_bottom_black">
+        <TextView
+            android:id="@+id/ohm_title_r"
+            android:text="@string/resistance_f"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false" />
+        <EditText
+            android:id="@+id/ohm_input_r"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no"
+            android:hint="@string/resistance"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:ems="10" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ohm_layout_feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/ohm_layout_r"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:weightSum="3"
+        android:background="@drawable/border_bottom_black">
+        <TextView
+            android:id="@+id/ohm_title_feedback"
+            android:text="@string/result"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false" />
+        <Button
+            android:id="@+id/ohm_button_calc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Credits text - developed by -->
+    <include layout="@layout/bottom_credits" />
+</RelativeLayout>

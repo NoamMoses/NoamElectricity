@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+fragment_formulas.xml
+This file is for the FormulasFragment.java
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/formulas"
+        android:textSize="30sp"
+        android:id="@+id/formulas_title"/>
+
+    <LinearLayout
+        android:id="@+id/formulas_layout_ohm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/formulas_title"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:weightSum="2"
+        android:background="@drawable/border_bottom_black">
+        <TextView
+            android:id="@+id/ohm_title"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false" />
+        <TextView
+            android:text="@string/ohmLaw"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/formulas_layout_watt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/formulas_layout_ohm"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:weightSum="2"
+        android:background="@drawable/border_bottom_black">
+        <TextView
+            android:id="@+id/watt_title"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false" />
+        <TextView
+            android:text="@string/wattFormula"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false" />
+    </LinearLayout>
+    <!-- RESISTORS -->
+    <LinearLayout
+        android:id="@+id/formulas_layout_resistorsMainTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/formulas_layout_watt"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:weightSum="1"
+        android:background="#1A000000">
+        <TextView
+            android:id="@+id/resistors_title"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/formulas_layout_resistors_titles"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/formulas_layout_resistorsMainTitle"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/resistorsSeries_title"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false" />
+        <TextView
+            android:id="@+id/resistorsParallel_title"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/formulas_layout_resistors_values"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/formulas_layout_resistors_titles"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:weightSum="2"
+        android:paddingBottom="10dp"
+        android:background="@drawable/border_bottom_black">
+        <ImageView
+            android:id="@+id/formulas_value_resistorsParallel"
+            android:contentDescription="@string/resistors"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:src="@drawable/resistor_series_big_txt1" />
+        <ImageView
+            android:id="@+id/formulas_value_resistorsSeries"
+            android:contentDescription="@string/resistors"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:src="@drawable/resistor_parallel_big_txt2" />
+    </LinearLayout>
+    <!-- CAPACITORS -->
+    <LinearLayout
+        android:id="@+id/formulas_layout_capacitorsMainTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/formulas_layout_resistors_values"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:weightSum="1"
+        android:background="#1A000000">
+        <TextView
+            android:id="@+id/capacitors_title"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/formulas_layout_capacitors_titles"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/formulas_layout_capacitorsMainTitle"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/capacitorsSeries_title"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false" />
+        <TextView
+            android:id="@+id/capacitorsParallel_title"
+            android:textSize="20sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/formulas_layout_capacitors_values"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/formulas_layout_capacitors_titles"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:weightSum="2"
+        android:paddingBottom="10dp"
+        android:background="@drawable/border_bottom_black">
+        <ImageView
+            android:id="@+id/formulas_value_capacitorsParallel"
+            android:contentDescription="@string/capacitors"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:src="@drawable/capacitors_series" />
+        <ImageView
+            android:id="@+id/formulas_value_capacitorsSeries"
+            android:contentDescription="@string/capacitors"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:src="@drawable/capacitors_parallel" />
+    </LinearLayout>
+    <include layout="@layout/bottom_credits" />
+</RelativeLayout>

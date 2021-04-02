@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+fragment_resistors.xml
+This file is for the ResistorsFragment.java
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/resistorCalculator"
+        android:textSize="30sp"
+        android:id="@+id/ohm_title"/>
+        <!--
+            TODO This text variable is "resistors" and it should be "resistor" (not plural) but not so important
+        -->
+    <LinearLayout
+        android:id="@+id/res_layout_band1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/ohm_title"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:weightSum="2"
+        android:background="@drawable/border_bottom_black">
+        <TextView
+            android:id="@+id/res_title_band1"
+            android:text="@string/resistor_1band"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false" />
+        <Spinner
+            android:id="@+id/spin_band1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/res_layout_band2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/res_layout_band1"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:weightSum="2"
+        android:background="@drawable/border_bottom_black">
+        <TextView
+            android:id="@+id/res_title_band2"
+            android:text="@string/resistor_2band"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false" />
+        <Spinner
+            android:id="@+id/spin_band2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/res_layout_band3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/res_layout_band2"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:weightSum="2"
+        android:background="@drawable/border_bottom_black">
+        <TextView
+            android:id="@+id/res_title_band3"
+            android:text="@string/resistor_3band"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false" />
+        <Spinner
+            android:id="@+id/spin_band3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/res_layout_band4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/res_layout_band3"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:weightSum="2"
+        android:background="@drawable/border_bottom_black">
+        <TextView
+            android:id="@+id/res_title_band4"
+            android:text="@string/resistor_4band"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:includeFontPadding="false" />
+        <Spinner
+            android:id="@+id/spin_band4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/res_layout_result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/res_layout_band4"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:weightSum="2"
+        android:background="@drawable/border_bottom_black">
+        <TextView
+            android:id="@+id/res_title_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/result"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/res_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/ohm_temp_result"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <include layout="@layout/bottom_credits" />
+</RelativeLayout>

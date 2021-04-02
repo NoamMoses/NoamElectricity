@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+nav_header.xml
+This file is for the top part of the open side menu
+This is where I put the small logo, name - developed by Nemo, and the email address
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:background="#5D5D5D"
+    android:gravity="bottom"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/appLogo_description"
+        android:src="@drawable/my_logo_1024x1024_circle" />
+    <!--
+        TODO check this
+        Can be also
+        my_logo_1024x1024_circle
+        my_logo_circle
+    -->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <TextView
+            android:text="@string/appName_credit_part1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <TextView
+            android:text="@string/appName_credit_part2"
+            android:textColor="#99009AFF"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <TextView
+            android:text="@string/appName_credit_part3"
+            android:fontFamily="@font/satisfy_regular"
+            android:textColor="#99009AFF"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </LinearLayout>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingTop="8dp"
+        android:text="@string/app_email"/>
+</LinearLayout>
