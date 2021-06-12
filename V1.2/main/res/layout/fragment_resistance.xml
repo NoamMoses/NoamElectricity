@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+fragment_resistors.xml
+This file is for the ResistorsFragment.java
+
+xmlns:app="http://schemas.android.com/apk/res-auto"
+-->
+
+
+<!-- Third digit band - Only if 5/6 resistor type is selected -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/resistorCalculator"
+        android:textSize="30sp"
+        android:id="@+id/resistors_title"/>
+    <!-- Choosing between 4/5 bands resistor -->
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp">
+        <RelativeLayout
+            android:id="@+id/innerScrollLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:paddingBottom="50dp">
+            <RadioGroup
+                android:id="@+id/chooseType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:background="@drawable/border_bottom_black">
+                <RadioButton
+                    android:id="@+id/resistors_chooseType_4band"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resistors_bands"
+                    android:gravity="center" />
+                <!-- TextView to take weight of 1, to have a split -->
+                <TextView
+                    android:layout_height="0dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"/>
+                <RadioButton
+                    android:id="@+id/resistors_chooseType_5band"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resistors_bands"
+                    android:gravity="center" />
+            </RadioGroup>
+            <!-- First digit band -->
+            <LinearLayout
+                android:id="@+id/res_layout_band_firstDigit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/chooseType"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:weightSum="2"
+                android:background="@drawable/border_bottom_black">
+                <TextView
+                    android:text="@string/resistor_band_firstDigit"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:includeFontPadding="false" />
+                <Spinner
+                    android:id="@+id/spinner_band_firstDigit"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!-- Second digit band -->
+            <LinearLayout
+                android:id="@+id/res_layout_band_secondDigit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/res_layout_band_firstDigit"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:weightSum="2"
+                android:background="@drawable/border_bottom_black">
+                <TextView
+                    android:text="@string/resistor_band_secondDigit"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:includeFontPadding="false" />
+                <Spinner
+                    android:id="@+id/spinner_band_secondDigit"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!-- Third digit band -->
+            <LinearLayout
+                android:id="@+id/res_layout_band_thirdDigit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/res_layout_band_secondDigit"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:weightSum="2"
+                android:background="@drawable/border_bottom_black">
+                <TextView
+                    android:text="@string/resistor_band_thirdDigit"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:includeFontPadding="false" />
+                <Spinner
+                    android:id="@+id/spinner_band_thirdDigit"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!-- Multiplier band -->
+            <LinearLayout
+                android:id="@+id/res_layout_band_multiplier"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/res_layout_band_thirdDigit"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:weightSum="2"
+                android:background="@drawable/border_bottom_black">
+                <TextView
+                    android:text="@string/resistor_band_multiplier"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:includeFontPadding="false" />
+                <Spinner
+                    android:id="@+id/spinner_band_multiplier"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!-- Tolerance band -->
+            <LinearLayout
+                android:id="@+id/res_layout_band_tolerance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/res_layout_band_multiplier"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:weightSum="2"
+                android:background="@drawable/border_bottom_black">
+                <TextView
+                    android:text="@string/resistor_band_tolerance"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:includeFontPadding="false" />
+                <Spinner
+                    android:id="@+id/spinner_band_tolerance"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/res_layout_result"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/res_layout_band_tolerance"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:weightSum="2"
+                android:background="@drawable/border_bottom_black">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/result"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/res_result"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/ohm_temp_result"
+                    android:textSize="25sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/res_layout_result"
+                android:layout_marginTop="10dp">
+                <include layout="@layout/resistors_demo" />
+            </LinearLayout>
+            <!--
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/res_layout_result"
+                android:layout_marginTop="10dp"
+                android:background="@color/purple_700"
+                android:orientation="horizontal">
+                <include layout="@layout/resistors_demo" />
+            </RelativeLayout>
+            -->
+        </RelativeLayout>
+    </ScrollView>
+    <include layout="@layout/bottom_credits" />
+</RelativeLayout>

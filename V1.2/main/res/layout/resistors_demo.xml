@@ -1,0 +1,27 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <com.noam.noamelectricity.Shapse.band
+        android:layout_height="100dp"
+        android:layout_width="25dp"
+        android:id="@+id/band_firstDigit" />
+    <com.noam.noamelectricity.Shapse.band
+        android:layout_height="100dp"
+        android:layout_width="25dp"
+        android:id="@+id/band_secondDigit" />
+    <com.noam.noamelectricity.Shapse.band
+        android:layout_height="100dp"
+        android:layout_width="25dp"
+        android:id="@+id/band_thirdDigit" />
+    <com.noam.noamelectricity.Shapse.band
+        android:layout_height="100dp"
+        android:layout_width="25dp"
+        android:id="@+id/band_multiplier" />
+    <com.noam.noamelectricity.Shapse.band
+        android:layout_height="100dp"
+        android:layout_width="25dp"
+        android:id="@+id/band_tolerance" />
+</LinearLayout>

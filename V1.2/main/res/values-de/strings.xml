@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Noam Electricity</string>
+    <string name="navigation_drawer_close">schließen</string>
+    <string name="navigation_drawer_open">öffnen</string>
+    <string name="home_title">Eine App für alle nützlichen Dinge, die ich jemals brauchen werde</string>
+    <string name="home">Startseite</string>
+    <string name="calculators">Taschenrechner</string>
+    <string name="result">Ergebnis</string>
+    <string name="laws">Gesetze</string>
+    <string name="resistors">Widerstände</string>
+    <string name="formulas">Formueln</string>
+    <string name="other">Sonstige</string>
+    <string name="err_emptyFields">Ein oder mehrere Felder sind leer</string>
+    <string name="ohmLawCalculator">Ohmscher Gesetzesrechner</string>
+    <string name="ohm_law_title">Ohms Gesetz</string>
+    <string name="voltage_f">Volt: (V)</string>
+    <string name="resistance_f">"Widerstrand: (R) "</string>
+    <string name="current_f">Storm: (I)</string>
+    <string name="voltage">Volt</string>
+    <string name="current">Storm</string>
+    <string name="resistance">Widerstrand</string>
+    <string name="calculate">Berechnen</string>
+    <string name="resistorCalculator">Widerstrandsberechner</string>
+    <string name="about_title">über die App</string>
+    <string name="about_bottomTxt">✶\t\t\tEntwickelt von Noam\t\t\t✶</string>
+    <string name="resistor_band_firstDigit">Erste Ziffer:</string>
+    <string name="resistor_band_secondDigit">Zweite Ziffer:</string>
+    <string name="resistor_band_multiplier">Multiplikator:</string>
+    <string name="resistor_band_tolerance">" Tolerenz:"</string>
+    <string name="capacitors">"Kondensator "</string>
+    <string name="lastUpdate">Zuletzt geupdated: %1$s</string>
+    <string name="developedBy">Entwickelt von</string>
+    <string name="QD_title">Zitat des Tages:</string>
+    <string name="emailInstructions">(Klik auf Emailadresse um eine Email zu versenden)</string>
+    <string name="APP_ABOUT">"Dies ist ein Text über meine App. Ich hoffe du und dass du es nützlich findest!  "</string>
+    <string name="seriesConnect_template">%1$s  in Reihe</string>
+    <string name="parallelConnect_template">%1$s parallel</string>
+    <string name="resistors_bands">%1$d Ringe</string>
+    <string name="resistor_band_thirdDigit">Dritte Ziffer:</string>
+    <string name="QD_genNew_programming">Programmierung zitate</string>
+    <string name="QD_genNew_general">Allgemeine zitate</string>
+</resources>
+
+<!--
+Original without the starts in the beggining and the end
+<string name="about_bottomTxt">Utviklet av Nemo</string>
+<string name="about_bottomTxt">Entwickelt von Noam</string>
+-->

@@ -1,0 +1,131 @@
+<resources>
+    <!-- System -->
+    <string name="app_name">Noam Electricity</string>
+    <string name="app_name_with_credit" translatable="false">Noam Electricity | By Nemo</string>
+    <string name="appName_credit_part1" translatable="false">Noam Electricity | </string>
+    <string name="appName_credit_part2" translatable="false">\tBy\t</string>
+    <string name="appName_credit_part3" translatable="false">Nemo</string>
+    <string name="nemo" translatable="false">Nemo</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="home">Home</string>
+
+    <!-- Sample string to use instead of hard coding "this is some text" -->
+    <string name="sample1" translatable="false">Sample text1</string>
+    <string name="sample2" translatable="false">Sample text2</string>
+    <string name="sample3" translatable="false">Sample text3</string>
+
+    <!-- Texts -->
+    <string name="app_email" translatable="false">noam1moses.apps@gmail.com</string>
+    <string name="emailInstructions">(Click on the email address to send an email)</string>
+    <string name="appLogo_description" translatable="false">The app\'s logo</string>
+    <string name="calculate">Calculate</string>
+    <string name="calculators">Calculators</string>
+
+    <!-- Home page -->
+    <string name="home_title">A random app with random tools</string>
+    <string name="lastUpdate">Last updated: %1$s</string>
+    <string name="lastUpdateDate" translatable="false">01.04.21 | V1.1</string>
+    <string name="developedBy">Developed by \t</string>
+    <string name="QD_title">Quote Of The Day:</string>
+    <string name="QD_quote" translatable="false">Default quote</string>
+    <string name="QD_quoteBy" translatable="false">Default quote by</string>
+    <string name="QD_genNew_programming">Programming quote</string>
+    <string name="QD_genNew_general">General quote</string>
+
+    <!-- TO-DO page -->
+    <string name="atWork" translatable="false">At work</string>
+    <string name="knownBugs" translatable="false">Known &#38; fixed bugs</string>
+    <string name="yetToCome" translatable="false">Yet to come...</string>
+
+    <!-- Errors -->
+    <string name="err_emptyFields">One or more fields are empty</string>
+
+    <!-- Electricity terms -->
+    <string name="voltage">Voltage</string>
+    <string name="current">Current</string>
+    <string name="resistance">Resistance</string>
+    <string name="ohm" translatable="false">Ohm</string>
+    <string name="watt" translatable="false">Watt</string>
+    <string name="voltage_f">Voltage: (V) </string>
+    <string name="current_f">Current: (I) </string>
+    <string name="resistance_f">Resistance: (R) </string>
+
+    <!-- Titles -->
+    <string name="ohm_law_title">Ohm law | V = IR</string>
+    <!-- Calculators -->
+    <string name="ohmLawCalculator">Ohm\'s law calculator</string>
+    <string name="resistorCalculator">Resistors calculator</string>
+    <string name="ohm_result" translatable="false">%1$s Ω | %2$s</string>
+    <string name="ohm_temp_result" translatable="false">10k | 1%</string>
+
+    <!-- Other texts -->
+    <string name="result">Result</string>
+    <string name="laws">Laws</string>
+    <string name="formulas">Formulas</string>
+    <string name="other">Other</string>
+    <string name="menuTODO" translatable="false">TODO - Yet to come..</string>
+    <string name="menuWhatsnew" translatable="false">What\'s new?</string>
+    <string name="todo" translatable="false">TODO</string>
+
+    <!-- Formulas -->
+    <string name="ohmLaw" translatable="false">V = IR</string>
+    <string name="wattFormula" translatable="false">W = VI</string>
+
+
+    <!-- Templates -->
+    <string name="seriesConnect_template">%1$s in series</string>
+    <string name="parallelConnect_template">%1$s in parallel</string>
+    <string name="colon_template" translatable="false">%1$s:</string>
+    <string name="quotedText_template" translatable="false">\"%1$s\"</string>
+
+    <!-- CAPACITORS -->
+    <string name="capacitors">Capacitors</string>
+    <!-- RESISTORS -->
+    <string name="resistors">Resistors</string>
+    <string name="resistors_bands">%1$d band</string>
+
+    <string name="resistor_band_firstDigit">First digit:</string>
+    <string name="resistor_band_secondDigit">Second digit:</string>
+    <string name="resistor_band_thirdDigit">Third digit:</string>
+    <string name="resistor_band_multiplier">Multiplier:</string>
+    <string name="resistor_band_tolerance">Tolerance:</string>
+
+
+
+
+
+    <!-- What's new -->
+    <string name="whatsnew_title">What\'s new?</string>
+    <string name="whatsnew_title_lastVersion">Version v1.2</string>
+    <string name="whatsnew_lastVersion" translatable="false">
+* Bugs fixes (mostly GUI issues)
+\n* Added \"What\'s new\" page
+\n* Improved resistors colour codes calculator:
+\n\t\t\t\t- Added 5 bands resistor support
+\n\t\t\t\t- Added a resistor simulator
+\n* Improved a bit the Ohm\'s law calculator (more improvements yet to come)
+    </string>
+
+    <!-- About -->
+    <string name="about_title">About the app</string>
+    <string name="about_bottomTxt">✶\t\t\tDeveloped By Nemo\t\t\t✶</string>
+    <string name="languageAvailable" translatable="false">
+        The app is also available in:
+        <br />\n
+        English, Hebrew, German, Finnish, Norwegian
+    </string>
+    <string name="APP_ABOUT">
+        Here is some really fascinating text regarding this brilliant app!
+        <br />\n
+        You are more than welcome to take a look upon this wonderful breathtaking message at anytime, any place!
+        <br />\nIt\'s 100% free - now, and forever!
+        <br /><br />\n\n
+        If you have any comments/reports/reviews/ideas/just a nice message, you are once again, more than welcome to contact me via my email, using the email address down below.
+        <br />\n
+        I\'ll be more than happy to throw it straight into the bin!
+        <br />\n
+        Thank you, and have a brilliant, remarkable and outstanding day!
+    </string>
+</resources>
+

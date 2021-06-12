@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Noam Electricity</string>
+    <string name="lastUpdate">עדכון אחרון: %1$s</string>
+    <string name="home_title">*משפט פתיחה מוכר*</string>
+    <string name="emailInstructions">(לחץ על כתובת האימייל, על מנת לשלוח אימייל)</string>
+    <string name="home">בית</string>
+    <string name="voltage">מתח</string>
+    <string name="current">זרם</string>
+    <string name="resistance">התנגדות</string>
+    <string name="calculate">חשב</string>
+    <string name="calculators">מחשבונים</string>
+    <string name="result">תוצאה</string>
+    <string name="ohm_law_title">חוק אוהם | V = IR</string>
+    <string name="voltage_f">מתח: (V)</string>
+    <string name="current_f">זרם: (I)</string>
+    <string name="resistance_f">התנגדות: (R)</string>
+    <string name="laws">חוקים</string>
+    <string name="formulas">נוסחאות</string>
+    <string name="other">אחר</string>
+    <string name="err_emptyFields">שדה אחד או יותר ריקים</string>
+    <string name="ohmLawCalculator">מחשבון חוק אוהם</string>
+    <string name="resistorCalculator">מחשבון נגדים</string>
+    <string name="resistors">נגדים</string>
+    <string name="resistor_band_firstDigit">ספרה ראשונה:</string>
+    <string name="resistor_band_secondDigit">ספרה שנייה:</string>
+    <string name="resistor_band_multiplier">מכפיל:</string>
+    <string name="resistor_band_tolerance">דיוק:</string>
+    <string name="capacitors">קבלים</string>
+    <string name="about_title">על האפליקצייה</string>
+    <string name="about_bottomTxt">✶\t\t\tפותח על ידי Nemo\t\t\t✶</string>
+    <string name="navigation_drawer_close">סגור</string>
+    <string name="navigation_drawer_open">פתח</string>
+    <string name="APP_ABOUT">זה טקסט מאוד מעניין על האפליקצייה. מוזמנים לקרוא אותו בכול עת, כאשר יש לכם זמן פנוי!\n<br /><br />\nלכול הערה\\הארה\\תלונה\\ביקור\\רעיו\\סתם הודעה נחמדה, מוזמנים לפנות בכתובת:\nnoam1moses.app@gmail.com\nואני יותר מאשמח להעביר את הודעתכם לדואר זבל.\nתודה!</string>
+    <string name="developedBy">פותח ע\"י</string>
+    <string name="QD_title">ציטוט היום:</string>
+    <string name="seriesConnect_template">%1$s  בסדרה</string>
+    <string name="parallelConnect_template">%1$s  במקביל</string>
+    <string name="resistors_bands">%1$d פסים</string>
+    <string name="resistor_band_thirdDigit">ספרה שלישית:</string>
+    <string name="QD_genNew_programming">ציטוט תכנות</string>
+    <string name="QD_genNew_general">ציטוט כללי</string>
+</resources>

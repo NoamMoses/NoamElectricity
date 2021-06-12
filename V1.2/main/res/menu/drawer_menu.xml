@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+drawer_menu.xml
+This file is for the open side menu
+This is where I specify each item in the list, and design the menu
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_formulas"
+            android:icon="@drawable/ic_formula_24"
+            android:title="@string/formulas" />
+        <item
+            android:id="@+id/nav_laws"
+            android:icon="@drawable/ic_baseline_rule_24"
+            android:title="@string/laws" />
+    </group>
+    <item android:title="@string/calculators">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_ohm"
+                    android:icon="@drawable/ic_baseline_calculate_24"
+                    android:title="@string/ohmLawCalculator" />
+                <item
+                    android:id="@+id/nav_resCalc"
+                    android:icon="@drawable/ic_baseline_calculate_24"
+                    android:title="@string/resistorCalculator" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/other">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_todo"
+                    android:icon="@drawable/ic_baseline_list_alt_24"
+                    android:title="@string/menuTODO" />
+                <item
+                    android:id="@+id/nav_whatsnew"
+                    android:icon="@drawable/outline_lightbulb_24"
+                    android:title="@string/menuWhatsnew" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_baseline_info_24"
+                android:title="@string/about_title" />
+            </group>
+        </menu>
+    </item>
+</menu>

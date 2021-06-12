@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+fragment_home.xml
+This file is for MainPage.java
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:ignore="NestedWeights">
+    <!--
+    Nice gold DD9B18
+    Nice purple_700
+    -->
+    <!--
+    TODO change nested weight
+    -->
+    <TextView
+        android:id="@+id/home_title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/home_title"
+        android:textSize="23sp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="90"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp">
+        <TextView
+            android:id="@+id/QD_title"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="@string/QD_title"
+            android:fontFamily="@font/gloria_hallelujah_regular"/>
+        <TextView
+            android:id="@+id/QD_quote"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="35"
+            android:background="#CCCCCC"
+            android:gravity="center"
+            android:text="@string/QD_quote"
+            android:textSize="20sp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:textStyle="italic" />
+        <TextView
+            android:id="@+id/QD_quoteBy"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/QD_quoteBy"
+            android:fontFamily="@font/gloria_hallelujah_regular"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="21">
+
+            <Button
+                android:id="@+id/myButton1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:text="Programing Quote"
+                app:backgroundTint="#4A4A4A" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/myButton2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:text="General Quote"
+                app:backgroundTint="#4A4A4A" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/home_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:text="@string/lastUpdate" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/developedBy"
+                android:fontFamily="@font/kalam_regular"
+                android:textColor="#009AFF"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kalam_regular"
+                android:text="@string/nemo"
+                android:textColor="#009AFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+<!--
+
+quoteOfTheDay
+Quote Of The Day
+QD - Quote Day
+
+-->

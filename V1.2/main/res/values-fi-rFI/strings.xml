@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Noam Electricity</string>
+    <string name="lastUpdate">Viimeksi päivitetty: %1$s</string>
+    <string name="developedBy">Kehittäjä</string>
+    <string name="QD_title">Päivän sitaatti:</string>
+    <string name="emailInstructions">(Paina sähköpostiosoitetta lähettääksesi sähköpostia )</string>
+    <string name="home">Koti</string>
+    <string name="voltage">Jännite</string>
+    <string name="current">Sähkövirta</string>
+    <string name="resistance">Resistanssi</string>
+    <string name="calculators">Laskimet</string>
+    <string name="calculate">Laske</string>
+    <string name="result">Tulos:</string>
+    <string name="voltage_f">Jännite: (V)</string>
+    <string name="current_f">Sähkövirta: (I)</string>
+    <string name="resistance_f">Resistanssi: (R)</string>
+    <string name="formulas">Kaavat</string>
+    <string name="laws">"Laki  "</string>
+    <string name="other">Muut</string>
+    <string name="err_emptyFields">Yksi tai useampi kenttä on tyhjä</string>
+    <string name="ohmLawCalculator">Ohmin laki Laskin</string>
+    <string name="resistors">Vastus</string>
+    <string name="resistorCalculator">Vastuksen värikoodin laskin</string>
+    <string name="resistor_band_multiplier">Kerroin:</string>
+    <string name="resistor_band_tolerance">Toleranssi:</string>
+    <string name="about_title">Tietoja sovelluksesta</string>
+    <string name="about_bottomTxt">Kehittäjä Nemo</string>
+    <string name="navigation_drawer_open">avaa</string>
+    <string name="navigation_drawer_close">sulje</string>
+    <string name="capacitors">Kondensaattorit</string>
+    <string name="ohm_law_title">Ohm Laki | V = IR</string>
+    <string name="APP_ABOUT">Jooo hauska tutustoa! olen mina Nemo, ja sina? Miten menee?</string>
+    <string name="home_title">"Tämä on sovellus kaikille hyödyllisille asioille, joita tarvitsen koskaan  "</string>
+    <string name="seriesConnect_template">%1$s sarjaan</string>
+    <string name="parallelConnect_template">%1$s rinnakkain</string>
+    <string name="resistors_bands">%1$d bändi</string>
+</resources>

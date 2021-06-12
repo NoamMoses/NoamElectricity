@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Noam Electricity</string>
+    <string name="lastUpdate">Sist oppdatert: %1$s</string>
+    <string name="developedBy">Utviklet av</string>
+    <string name="QD_title">Dagens sitat:</string>
+    <string name="emailInstructions">"Klikk på epost-adressen for å sende en epost "</string>
+    <string name="home">Hjem</string>
+    <string name="voltage">"Elektrisk spenning "</string>
+    <string name="current">Strømstyrke</string>
+    <string name="resistance">Resistans</string>
+    <string name="result">Resultat</string>
+    <string name="calculate">Kalkuler</string>
+    <string name="calculators">Kalkulatorer</string>
+    <string name="laws">Lov</string>
+    <string name="formulas">Formler</string>
+    <string name="other">Annet</string>
+    <string name="err_emptyFields">"Ett eller flere felt er tomme "</string>
+    <string name="about_title">Om appen</string>
+    <string name="ohm_law_title">Ohms lov | V = IR</string>
+    <string name="ohmLawCalculator">Ohms lov kalkulator</string>
+    <string name="about_bottomTxt">✶\t\t\tUtviklet av Nemo\t\t\t✶</string>
+    <string name="capacitors">"Kondensator "</string>
+    <string name="resistors">Motstander</string>
+    <string name="resistor_band_firstDigit">Første siffer:</string>
+    <string name="resistor_band_secondDigit">Aandre siffer:</string>
+    <string name="resistor_band_multiplier">multiplikator:</string>
+    <string name="resistor_band_tolerance">Toleranse:</string>
+    <string name="resistorCalculator">"Motstand fargekode kalkulator "</string>
+    <string name="voltage_f">Elektrisk spenning: (V)</string>
+    <string name="resistance_f">Resistans: (R)</string>
+    <string name="current_f">Strømstyrke: (I)</string>
+    <string name="APP_ABOUT">Tusen takk!!</string>
+    <string name="home_title">"Dette er en app for alle nyttige ting jeg noensinne vil trenge "</string>
+    <string name="navigation_drawer_close">Lukk</string>
+    <string name="navigation_drawer_open">Åpne</string>
+    <string name="seriesConnect_template">%1$s i serie:</string>
+    <string name="parallelConnect_template">%1$s  in Reihe</string>
+    <string name="resistors_bands">%1$d Ringer</string>
+    <string name="resistor_band_thirdDigit">Tredje siffer:</string>
+    <string name="QD_genNew_programming">Programmering sitater</string>
+    <string name="QD_genNew_general">Generelle sitater</string>
+</resources>
+
+    <!--
+    Original without the starts in the beggining and the end
+    <string name="about_bottomTxt">Utviklet av Nemo</string>
+    -->

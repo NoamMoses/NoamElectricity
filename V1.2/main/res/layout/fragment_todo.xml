@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+fragment_todo.xml
+This file is for the TODOFragment.java
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/todo"
+        android:textSize="30sp"
+        android:id="@+id/todo_title" />
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+        <TextView
+            android:id="@+id/titleCat_todo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:fontFamily="@font/kalam_bold"
+            android:text="@string/todo"
+            android:textSize="20sp" />
+        <ListView
+            android:id="@+id/lv_todo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:layout_marginBottom="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/border_bottom_grey"/>
+        <TextView
+            android:id="@+id/titleCat_atWork"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:textSize="20sp"
+            android:text="@string/atWork"
+            android:fontFamily="@font/kalam_bold"/>
+        <ListView
+            android:id="@+id/lv_atWork"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:paddingTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border_bottom_grey" />
+        <TextView
+            android:id="@+id/titleCat_knownBugs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:textSize="20sp"
+            android:text="@string/knownBugs"
+            android:fontFamily="@font/kalam_bold"/>
+        <ListView
+            android:id="@+id/lv_knownBugs"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25"
+            android:paddingTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border_bottom_grey" />
+
+    </LinearLayout>
+
+
+    <include layout="@layout/bottom_credits" />
+
+</RelativeLayout>
+
+    <!--
+    Other colours that I tried
+    Light blue-turquoise: 00BCD4
+
+    -->

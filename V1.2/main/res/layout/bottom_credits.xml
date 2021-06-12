@@ -1,0 +1,36 @@
+<!--
+bottom_credit.xml
+
+This file is for the bottom credit box
+This is included in every page using <include>
+    except for the main one - where I have a different credit box,
+    with the last updated and the version
+-->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    tools:showIn="@layout/activity_main">
+    <LinearLayout
+        android:id="@+id/layout_bottomCredit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="#EDEDED">
+    <TextView
+        android:id="@+id/about_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/satisfy_regular"
+        android:text="@string/about_bottomTxt"
+        android:textColor="#9900406A"
+        android:textSize="30sp"
+        tools:targetApi="o" />
+    </LinearLayout>
+</FrameLayout>
